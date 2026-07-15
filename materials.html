@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtremalMath | Study Materials</title>
+    <!-- 引入与首页相同的字体，保持风格统一 -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #0366d6;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #666666;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 90%;
+            background: var(--card-bg);
+            padding: 60px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .file-item:hover {
+            background-color: #fcfcfc;
+            border-color: #ddd;
+            transform: translateY(-2px);
+        }
+
+        .file-icon {
+            font-size: 1.8em;
+            margin-right: 20px;
+        }
+
+        .file-info a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 1.1em;
+            display: block;
+        }
+        
+        .file-info a:hover {
+            color: var(--accent-color);
+        }
+
+        .file-info small {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #aaa;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 返回首页的链接 -->
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <h1>Study Materials</h1>
+        <p style="text-align: center; color: var(--text-light); margin-bottom: 40px;">
+            A collection of lecture notes, problem sets, and other resources.
+        </p>
+
+        <ul class="file-list">
+            <!-- 示例文件项，你可以复制这个 <li> 块来添加更多文件 -->
+            <li class="file-item">
+                <span class="file-icon">📄</span>
+                <div class="file-info">
+                    <!-- 记得修改 href 为你实际的文件路径 -->
+                    <a href="./notes/lecture_notes_01.pdf">Lecture Notes: Introduction to Graph Theory</a>
+                    <small>Uploaded: July 2026</small>
+                </div>
+            </li>
+             <li class="file-item">
+                <span class="file-icon">📝</span>
+                <div class="file-info">
+                    <a href="./problem_sets/exam_prep.pdf">Exam Prep Guide & Solutions</a>
+                    <small>Uploaded: June 2026</small>
+                </div>
+            </li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 ExtremalMath. Hosted on GitHub Pages.
+        </div>
+    </div>
+
+</body>
+</html>
