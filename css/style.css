@@ -600,3 +600,25 @@ body {
         bottom: 15px;
     }
 }
+
+/* Animated colours for HIMSAT departments and programmes */
+@keyframes himsatProgrammeColours {
+    0%   { color: #0056b3; }
+    25%  { color: #00875a; }
+    50%  { color: #b45309; }
+    75%  { color: #7c3aed; }
+    100% { color: #0056b3; }
+}
+
+.card-grid a.menu-card h4,
+.card-grid a.menu-card ul li {
+    animation: himsatProgrammeColours 6s linear infinite;
+}
+
+.card-grid a.menu-card h4 {
+    font-weight: 700;
+}
+
+.card-grid a.menu-card ul li {
+    animation-duration: 8s;
+}
