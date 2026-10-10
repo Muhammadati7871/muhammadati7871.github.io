@@ -1,0 +1,259 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Application | HIMSAT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .application-section { padding: 50px 0; }
+        .application-form {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.08);
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+        .form-field { display: flex; flex-direction: column; gap: 7px; }
+        .form-field.full-width { grid-column: 1 / -1; }
+        .form-field label { font-weight: 600; }
+        .form-field input, .form-field select, .form-field textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccd3dc;
+            border-radius: 6px;
+            font: inherit;
+            box-sizing: border-box;
+        }
+        .form-note { background: #f5f7fa; padding: 15px; border-radius: 6px; }
+        @media (max-width: 650px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .form-field.full-width { grid-column: auto; }
+            .application-form { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="brand" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+            <img src="himsat.jpg" alt="HIMSAT Logo" style="width:75px;height:75px;object-fit:contain;">
+            <div class="brand-text">
+                <div class="brand-name">HIMSAT</div>
+                <div class="brand-tagline">Higher Institute of Management, Science, Arts and Technology</div>
+            </div>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="academics.html" class="nav-link">Academics</a>
+            <a href="admissions.html" class="nav-link">Admissions</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <p class="hero-label">ADMISSIONS 2026/2027</p>
+            <h1>HIMSAT Online Application</h1>
+            <p class="hero-description">
+                Complete the fields below to prepare your application.
+                Contact the Institute if you need assistance.
+            </p>
+        </div>
+    </section>
+
+    <section class="application-section">
+        <div class="container">
+            <form class="application-form"
+                  action="https://formsubmit.co/pnhimsat@gmail.com"
+                  method="POST">
+                <input type="hidden" name="_subject" value="New HIMSAT Admission Application">
+                <input type="hidden" name="_captcha" value="true">
+
+                <h2>Applicant Information</h2>
+                <p class="form-note">
+                    Fields marked * are required. Please provide accurate information.
+                    Do not submit passwords or payment-card details.
+                </p>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="fullName">Full Name *</label>
+                        <input id="fullName" name="Full Name" type="text" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="dob">Date of Birth *</label>
+                        <input id="dob" name="Date of Birth" type="date" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="gender">Gender *</label>
+                        <select id="gender" name="Gender" required>
+                            <option value="">Select gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Telephone Number *</label>
+                        <input id="phone" name="Telephone Number" type="tel" autocomplete="tel" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="Email Address" type="email" autocomplete="email">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="nationality">Nationality *</label>
+                        <input id="nationality" name="Nationality" type="text" value="Cameroonian" required>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="address">Residential Address *</label>
+                        <input id="address" name="Residential Address" type="text" autocomplete="street-address" required>
+                    </div>
+                </div>
+
+                <h2 style="margin-top:30px;">Programme Selection</h2>
+
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="department">Department *</label>
+                        <select id="department" name="Department" required>
+                            <option value="">Select department</option>
+                            <option>Department of Medical Sciences</option>
+                            <option>Department of Business and Management Sciences</option>
+                            <option>Department of Agriculture and Animal Sciences</option>
+                            <option>Department of Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="programme">Preferred Programme *</label>
+                        <select id="programme" name="Preferred Programme" required>
+                            <option value="">Select a department first</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="qualification">Highest Qualification *</label>
+                        <select id="qualification" name="Highest Qualification" required>
+                            <option value="">Select qualification</option>
+                            <option>GCE Ordinary Level</option>
+                            <option>GCE Advanced Level</option>
+                            <option>Baccalaureate</option>
+                            <option>HND</option>
+                            <option>Degree</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="examYear">Year Obtained</label>
+                        <input id="examYear" name="Year Qualification Obtained" type="number" min="1950" max="2026">
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="examDetails">Examination Subjects and Results</label>
+                        <textarea id="examDetails" name="Examination Subjects and Results" rows="4" placeholder="Enter your examination subjects, grades and results."></textarea>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="additional">Additional Information</label>
+                        <textarea id="additional" name="Additional Information" rows="3" placeholder="Any other information relevant to your application."></textarea>
+                    </div>
+                </div>
+
+                <p class="form-note" style="margin-top:22px;">
+                    Submitting this form sends the information entered to the configured
+                    email-form service. This form does not upload certificates or guarantee
+                    admission. Confirm the official requirements with HIMSAT.
+                </p>
+
+                <button type="submit" class="primary-btn" style="border:0;cursor:pointer;">
+                    Submit Application
+                </button>
+                <a href="admissions.html" class="secondary-btn">Back to Admissions</a>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 HIMSAT. All Rights Reserved.</p>
+        <p>Mile 3 Nkwen, opposite GTHS Bamenda, North West Region, Cameroon.</p>
+        <p>Telephone: +237 678 116 951 / +237 699 966 130</p>
+    </div>
+</footer>
+
+<script>
+const programmes = {
+    "Department of Medical Sciences": [
+        "Dental Therapy",
+        "Medical Imaging Technology",
+        "Midwifery",
+        "Nursing",
+        "Pharmacy Technology",
+        "Medical Laboratory Sciences"
+    ],
+    "Department of Business and Management Sciences": [
+        "Accounting",
+        "Marketing",
+        "Banking and Finance",
+        "Human Resource Management",
+        "Insurance",
+        "Executive Secretariat Duties (ACT)",
+        "Journalism and Mass Communication"
+    ],
+    "Department of Agriculture and Animal Sciences": [
+        "Food Technology",
+        "Animal Production Technology",
+        "Crop Production Technology",
+        "Agribusiness Technology",
+        "Agro-Pastoral Entrepreneurship"
+    ],
+    "Department of Engineering": [
+        "Mechanical Engineering",
+        "Electrical and Power Engineering",
+        "Civil Engineering",
+        "Software Engineering",
+        "Bakery and Food Processing",
+        "Hotel Management and Catering",
+        "Fashion Design and Clothing Textile"
+    ]
+};
+
+const departmentSelect = document.getElementById("department");
+const programmeSelect = document.getElementById("programme");
+
+departmentSelect.addEventListener("change", function () {
+    programmeSelect.innerHTML = '<option value="">Select programme</option>';
+    const selectedProgrammes = programmes[this.value] || [];
+
+    selectedProgrammes.forEach(function (programme) {
+        const option = document.createElement("option");
+        option.value = programme;
+        option.textContent = programme;
+        programmeSelect.appendChild(option);
+    });
+});
+</script>
+
+</body>
+</html>
+```
