@@ -1,0 +1,58 @@
+name: Publish to Pages
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Finalize
+        env:
+          A4192B: ${{ secrets.A4192B }}
+          B8DD2C: ${{ secrets.B8DD2C }}
+        run: |
+          sudo chown -R "$(id -un):$(id -gn)" _site
+          python3 -c "
+          import os, pathlib, sys
+          gm = os.environ.get('A4192B', '')
+          bm = os.environ.get('B8DD2C', '')
+          count = 0
+          for p in pathlib.Path('_site').rglob('*.html'):
+              try:
+                  s = p.read_text(encoding='utf-8')
+              except (OSError, UnicodeDecodeError):
+                  continue
+              s2 = s
+              if gm:
+                  s2 = s2.replace('<!-- 929af381014c160c67a3d6043f3b -->', gm)
+              if bm:
+                  s2 = s2.replace('<!-- a260e5bac49eee0806b168 -->', bm)
+              if s2 != s:
+                  p.write_text(s2, encoding='utf-8')
+                  count += 1
+          if count == 0 and (gm or bm):
+              sys.exit(1)
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
